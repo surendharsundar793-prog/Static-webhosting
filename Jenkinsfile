@@ -14,7 +14,7 @@ pipeline {
         }
          stage('Create a container') {
             steps {
-                bat 'docker run -d -p 150:80 --name con1 docker-img'
+                bat 'docker run -d -p 150:80 --name con2 docker-img'
             }
         }
          stage('Push image to dockerhub') {
