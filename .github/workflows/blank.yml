@@ -16,7 +16,7 @@ jobs:
           source: "./*"
           target: "/tmp/website"
       - name: Deploy into ec2
-        uses: appleboy/scp-action@v1
+        uses: appleboy/ssh-action@v1
         with:
           host: ${{ secrets.SERVER_IP }}
           username: ${{ secrets.AWS_USER }}
